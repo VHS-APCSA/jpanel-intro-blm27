@@ -22,16 +22,16 @@ public class SimplePanel extends JPanel
         g.setColor(Color.blue);
         width = getWidth();
         height = getHeight();
-        g.drawLine(0, height/2, width, height/2);
-        g.drawLine(width/2, height, width/2, 0);
+        g.drawLine(width-width, height/2, width, height/2);
+        g.drawLine(width/2, height, width/2, height-height);
         g.setColor(Color.green);
-        g.drawRect(125/2, height/2+62 , 125, 100);
+        g.drawRect(width/8, height/2+62 , height/4, width/5);
         g.setColor(Color.red);
-        g.fillRect(width/2+62, height/2+62 , 125, 100);
+        g.fillRect(width/2+62, height/2+62 , height/4, width/5);
         g.setColor(Color.orange);
-        g.drawOval(width/2+62, height/6, 125, 100);
+        g.drawOval(width/2+62, height/6, height/4, width/5);
         g.setColor(Color.white);
-        g.fillOval(125/2, height/6 , 125, 100);
+        g.fillOval(width/8, height/6, height/4, width/5);
         
     }
 }
